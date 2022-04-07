@@ -10,11 +10,12 @@ export interface MetaInfo {
 }
 
 export interface DiaryApi {
-  service?: Array<DiaryInfo>;
+  diary?: Array<DiaryInfo>;
 }
 
 export interface DiaryInfo {
   id: string;
+  title: string;
   image: {
     url: string;
     width?: string;
