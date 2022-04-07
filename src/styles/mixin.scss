@@ -1,0 +1,22 @@
+@use "sass:math";
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+@function get_vw($size, $viewport: 375) {
+  $rate: math.div(100, $viewport);
+  @return $rate * $size * 1vw;
+}
+
+@mixin fz_vw($font-size: 10, $view: 375) {
+  font-size: $font-size * 1px;
+  font-size: get_vw($font-size, $view);
+}
+
+@mixin fz_vw_pc($font-size: 10, $view: 1920) {
+  font-size: $font-size * 1px;
+  font-size: get_vw($font-size, $view);
+}

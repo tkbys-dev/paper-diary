@@ -1,0 +1,40 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  // background-color: #000;
+  // color: #fff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+.diary {
+  padding: 5rem 10rem;
+  @include mq(md) {
+  }
+  &-list {
+  }
+
+  &-card {
+    margin-bottom: 6rem;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #5e5e5e;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+      display: block;
+      width: 30rem;
+      margin: 0 auto 2rem;
+    }
+  }
+  &-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &-content {
+  }
+}
