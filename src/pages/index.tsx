@@ -21,6 +21,10 @@ const Top: NextPage<Props> = ({ diary }) => {
             return (
               <li key={d.id} className="diary-card">
                 <h2 className="diary-title">{d.title}</h2>
+                <p className="diary-when">
+                  <span className="date">{d.date}</span>{" "}
+                  <span className="day">{d.day}</span>
+                </p>
                 <img src={d.image.url} />
                 <div
                   className="news-detail_body"

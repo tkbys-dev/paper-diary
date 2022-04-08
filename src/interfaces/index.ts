@@ -16,6 +16,8 @@ export interface DiaryApi {
 export interface DiaryInfo {
   id: string;
   title: string;
+  date: string;
+  day: string;
   image: {
     url: string;
     width?: string;

@@ -31,8 +31,12 @@ body {
     }
   }
   &-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
+    font-weight: bold;
+  }
+  &-when {
+    margin-bottom: 2rem;
     font-weight: bold;
   }
   &-content {
