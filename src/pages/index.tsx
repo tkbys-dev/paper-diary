@@ -25,7 +25,7 @@ const Top: NextPage<Props> = ({ diary }) => {
                   <span className="date">{d.date}</span>{" "}
                   <span className="day">{d.day}</span>
                 </p>
-                <img src={d.image.url} />
+                <img src={d.image.url} width="300" height="100%" />
                 <div
                   className="news-detail_body"
                   dangerouslySetInnerHTML={{
